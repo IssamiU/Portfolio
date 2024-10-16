@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans';
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.home h1 {
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    justify-content: left;
+    
+}
+.container .titulo {
+    text-align: left;
+}
+.container .btn {
+    display: inline-block;
+    background-color: #b9b9b9;
+    padding: 20px 50px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.container a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    font-size: 18px;
+}
+
+a:hover {
+    color: rgb(110, 110, 110); 
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container img {
+    border-radius: 10%;
+    width: 230px;
+    margin-right: 200px;
+    margin-left: 100px;
+
+}
+
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url(/img/68.jpg);
+    background-size: 500px 400px;
+    background-position: center;
+}
+
+
+
+.fundo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+    background-color: #f4f4f4 
+}
+.sobre-mim h2 {
+    padding: 30px 0 0 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgba(92, 92, 92, 0.438);
+    
+
+}
+
+.sobre-mim p {
+    max-width: 2000px;
+    padding: 0 40px 40px 40px;
+    font-size: 20px;
+    
+    
+}
+
+
+.sobre-mim .skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 20px 0 20px 0;
+    width: 600px;
+    align-items: center;
+    background-color: rgba(233, 232, 232, 1) ;
+    
+}
+
+
+.sobre-mim .skills img {
+    width: 50px;
+    height: 50px;
+}
+
+.projetos {
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url(/img/68.jpg);
+    background-size: 500px 400px;
+    background-position: center;
+}
+
+.projetos h2 {
+    padding: 30px 0 0 0;
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgba(92, 92, 92, 0.3);
+}
+.projetos a{
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    font-size: 18px;
+}
+.projetos .btn {
+    display: inline-block;
+    background-color: #b9b9b9;
+    padding: 10px 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    
+}
+
+.projetos p{
+    padding: 0 40px 40px 40px;
+    font-size: 20px;
+}
+.projetos .project-item img{
+    width: 300px;
+}
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contato {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgba(92, 92, 92, 0.3);
+}
+
+
+
+
+
+footer { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container img {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .sobre-mim .skills {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .carousel {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    header .logo {
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .container .btn {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
+    .sobre-mim h2 {
+        font-size: 24px;
+    }
+
+    .projetos h2 {
+        font-size: 24px;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+    }
+}
