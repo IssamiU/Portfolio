@@ -12,6 +12,7 @@ body {
 header {
     position: fixed;
     width: 100%;
+    z-index: 1000px;
     background-color: #000;
     color: #fff;
     padding: 20px;
@@ -91,7 +92,7 @@ a:hover {
     align-items: center;
     padding: 50px 20px;
     text-align: center;
-    background-image: url(./img/68.jpg);
+    background-image: url('../img/68.jpg');
     background-size: 500px 400px;
     background-position: center;
 }
@@ -147,7 +148,7 @@ a:hover {
 .projetos {
     padding: 50px 20px;
     text-align: center;
-    background-image: url(./img/68.jpg);
+    background-image: url("../img/68.jpg");
     background-size: 500px 400px;
     background-position: center;
 }
