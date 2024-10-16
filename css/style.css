@@ -91,7 +91,7 @@ a:hover {
     align-items: center;
     padding: 50px 20px;
     text-align: center;
-    background-image: url(/img/68.jpg);
+    background-image: url(./img/68.jpg);
     background-size: 500px 400px;
     background-position: center;
 }
@@ -147,7 +147,7 @@ a:hover {
 .projetos {
     padding: 50px 20px;
     text-align: center;
-    background-image: url(/img/68.jpg);
+    background-image: url(./img/68.jpg);
     background-size: 500px 400px;
     background-position: center;
 }
