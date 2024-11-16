@@ -5,100 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfólio - Issami Umeoka</title>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <div class="logo">Issami Umeoka</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Issami Umeoka</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:text-gray-300">Início</a></li>
+                    <li><a href="#sobre" class="hover:text-gray-300">Sobre Mim</a></li>
+                    <li><a href="#projetos" class="hover:text-gray-300">Projetos</a></li>
+                    <li><a href="#contato" class="hover:text-gray-300">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id='home' class="home">
-        <div class="container">   
-            <img class='foto' src="./img/foto3.jfif" alt="foto">
-            <div class='titulo'>
-                <h1>BEM VINDO AO MEU PORTFÓLIO</h1>
-                <p>SOU UM DESENVOLVEDOR DE SOFTWARE MULTIPLATAFORMA</p>
-                <h2>ISSAMI UMEOKA</h2>
-                <br><br>
-                
-                    <div class="mt-6">
-                        <a href="./documents/Currículo Profissional ISSAMI.pdf" target="_blank" download="" class="btn">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
-                                class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
-                                </path>
-                            </svg>
-                            Baixar Currículo
-                        </a>
+    <!-- Home Section -->
+    <section id="home" class="bg-blue-500 text-white py-20">
+        <div class="teste container mx-auto text-center">
+            <img class="w-32 h-32 mx-auto rounded-full border-4 border-white" src="./img/foto3.jfif" alt="Foto">
+            <h1 class="text-4xl font-bold mt-4">BEM VINDO AO MEU PORTFÓLIO</h1>
+            <p class="text-xl mt-2">Sou um Desenvolvedor de Software Multiplataforma</p>
+            <h2 class="text-2xl mt-4">ISSAMI UMEOKA</h2>
+            <a href="./documents/Currículo Profissional ISSAMI.pdf" target="_blank" class="mt-6 inline-block bg-white text-blue-500 px-6 py-3 rounded-lg shadow-md hover:bg-gray-200 transition">
+                Baixar Currículo
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre Mim Section -->
+    
+    <section id="sobre" class="py-20">
+        <div class="container mx-auto text-center">
+            <div class="bg-white rounded-lg shadow-lg p-6 relative">
+                <h2 class="text-3xl font-bold text-blue-900 mb-6">SOBRE MIM</h2>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700">Sou Issami Umeoka, nascido em 2005, e atualmente estou cursando Desenvolvimento de Software Multiplataforma na Fatec São José dos Campos...</p>
+                <div class="habilidades">    
+                    <div>
+                        <div class="tip" style="background-color: rgb(228, 77, 38);">HTML</div>
+                        <img src="./img/html.png" alt="HTML">
                     </div>
-                   
-            </div>
-                
-        </div>
-    </section>
-
-    <section id="sobre" class="sobre-mim">
-        <div class="fundo">
-            <h2>SOBRE MIM</h2>
-            <p>Sou Issami Umeoka, nascido em 2005, e atualmente estou cursando o curso de Desenvolvimento de Software Multiplataforma na Fatec São José dos Campos. Aspirante pelo mundo da informática, tenho uma forte afinidade com desenvolvimento front-end e design, além de grande interesse em programação de jogos. Sempre busco expandir meus conhecimentos em diversas áreas para alcançar meus objetivos profissionais.
-            </p>
-            
-            <div class="skills">
-                <img src="./img/html.png" alt="HTML">
-                <img src="./img/css.png" alt="CSS">
-                <img src="./img/python.png" alt="Python">
-                <img src="./img/mysql.png" alt="MySQL">
-                <img src="./img/Flask.png" alt="Flask">
-                <img src="./img/aws.png" alt="AWS">
-                <img src="./img/Bootstrap.png" alt="Bootstrap">
-                <img src="./img/tailwind.png" alt="tailwind">
-            </div>
-        </div>
-        
-    </section>
-
-    <section id="projetos" class="projetos">
-        <div class="fundo">    
-            <h2>PROJETOS</h2>
-            <div class="carousel">
-                <div class="project-item">
-                    <video width="600" controls>
-                        <source src="./vid/The Devs Dept - Sprint 1 - Pedro Henrique Vaz (1080p, h264, youtube).mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    <p><a href="https://github.com/nicolygz/the-devs-department" target="_blank" class="btn">Projeto de Aplicação de API - Primeiro Semestre</a> 
-                    <br><br>
-                        Descrição: Este projeto foi desenvolvido para coletar e organizar dados disponibilizados pelo site oficial da prefeitura, apresentando informações sobre proposições, frequência, e participação dos vereadores em comissões de forma clara e acessível ao público.
-                        
-                        Tecnologias Utilizadas: Python, HTML/CSS, JavaScript, MySQL e JIRA.
-                        
-                        Desafio: Criar uma plataforma interativa que simplificasse a busca e a visualização das informações relacionadas aos vereadores de São José dos Campos.
-                        
-                        Solução: Desenvolvemos um site utilizando HTML, CSS, Python e um banco de dados MySQL para processar e apresentar os dados, oferecendo uma experiência de pesquisa mais prática e intuitiva para os usuários.</p>
+                    <div>
+                        <div class="tip" style="background-color: rgb(21, 114, 182);">CSS</div>
+                        <img src="./img/css.png" alt="CSS">
+                    </div>
+                    <div>
+                        <div class="tip" style="background-color: rgb(243, 240, 38);">Python</div>
+                        <img src="./img/python.png" alt="Python">
+                    </div>
+                    <div>
+                        <div class="tip" style="background-color: rgb(0, 97, 138);">MySQL</div>
+                        <img src="./img/mysql.png" alt="MySQL">
+                    </div>
+                    <div>
+                        <div class="tip" style="background-color: rgb(167, 167, 167);">Flask</div>
+                        <img src="./img/Flask.png" alt="Flask">
+                    </div>
+                    <div>
+                        <div class="tip" style="background-color: rgb(255, 167, 35);">AWS</div>
+                        <img src="./img/aws.png" alt="AWS">
+                    </div>
+                    <div>
+                        <div class="tip" style="background-color: rgb(50, 197, 255);">Docker</div>
+                        <img src="./img/docker-icon.png" alt="Docker">
+                    </div>
+                    <div>
+                        <div class="tip" style="background-color: rgb(255, 79, 34);">Git</div>
+                        <img src="./img/git.png" alt="Git">
+                    </div>
+                    <div>
+                        <div class="tip" style="background-color: rgb(167, 28, 247);">Bootstrap</div>
+                        <img src="./img/Bootstrap.png" alt="Bootstrap">
+                    </div>
+                    <div>
+                        <div class="tip" style="background-color: rgb(56, 189, 248);">Tailwind</div>
+                        <img src="./img/tailwind.png" alt="Tailwind">
+                    </div>
+                    <div>
+                        <div class="tip" style="background-color: rgb(255, 11, 11);">Figma</div>
+                        <img src="./img/figma.png" alt="Figma">
+                    </div>    
                 </div>
             </div>
         </div>
     </section>
+    
 
-    <section id="contato" class="contato">
-        <h2>CONTATO</h2>
-        <div class="social-icons">   
-            <a href="https://www.linkedin.com/in/issami-umeoka-786716226/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://github.com/IssamiU" target="_blank"><img src="./img/github.png" alt="GitHub"></a>
+    <!-- Projetos Section -->
+    <section id="projetos" class="py-20">
+        <div class="container mx-auto">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-blue-900 text-center mb-6">PROJETOS</h2>
+                <video class="w-200 rounded-lg mb-4" controls>
+                    <source src="./vid/The Devs Dept - Sprint 1 - Pedro Henrique Vaz (1080p, h264, youtube).mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+                <a href="https://github.com/nicolygz/the-devs-department" target="_blank" class="block bg-blue-500 text-white text-center py-2 rounded-lg hover:bg-blue-600 transition">Projeto de Aplicação de API</a>
+                <p class="text-gray-700 mt-4">Descrição: Este projeto foi desenvolvido...</p>
+            </div>
         </div>
-        <p>issami.umeoka@gmail.com</p>
     </section>
 
-    <footer>
+    <!-- Contato Section -->
+    <section id="contato" class="py-10 bg-blue-900 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">CONTATO</h2>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.linkedin.com/in/issami-umeoka-786716226/" target="_blank">
+                    <img src="./img/linkedin.png" alt="LinkedIn" class="contato-img">
+                </a>
+                <a href="https://github.com/IssamiU" target="_blank">
+                    <img src="./img/github.png" alt="GitHub" class="contato-img">
+                </a>
+            </div>
+            <p>issami.umeoka@gmail.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white text-center py-4">
         <p>© 2024, Criado por Issami Umeoka</p>
     </footer>
 </body>

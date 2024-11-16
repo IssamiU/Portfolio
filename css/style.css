@@ -1,304 +1,126 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Geral */
 body {
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     line-height: 1.6;
+    --s: 82px;
+    --c1: #b1b1b1;
+    --c2: #bdbdbd;
+    --c3: #acacac;
+    --_g: var(--c3) 0 120deg, #0000 0;
+    background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)), conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)), conic-gradient(from 60deg at calc(200% / 3), var(--c3) 60deg, var(--c2) 0 120deg, #0000 0), conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)), linear-gradient(90deg, var(--c1) calc(100% / 6), var(--c2) 0 50%, var(--c1) 0 calc(500% / 6), var(--c2) 0);
+    background-size: calc(1.732* var(--s)) var(--s);
+    overflow-x: hidden;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 1000px;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo {
-    font-size: 24px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.home {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-.home h1 {
-    font-family: 'Josefin Sans';
-    font-size: 40px;
-    justify-content: left;
-    
-}
-.container .titulo {
-    text-align: left;
-}
-.container .btn {
-    display: inline-block;
-    background-color: #b9b9b9;
-    padding: 20px 50px;
-    border-radius: 15px;
-    margin-top: 20px;
-}
-
-.container a {
-    text-decoration: none;
-    color: rgb(255, 255, 255); 
-    font-size: 18px;
-}
-
-a:hover {
-    color: rgb(110, 110, 110); 
-}
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.container img {
-    border-radius: 10%;
-    width: 230px;
-    margin-right: 200px;
-    margin-left: 100px;
-
-}
-
-
-.sobre-mim {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 20px;
-    text-align: center;
-    background-image: url('../img/68.jpg');
-    background-size: 500px 400px;
-    background-position: center;
-}
-
-
-
-.fundo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-    
-    background-color: #f4f4f4 
-}
-.sobre-mim h2 {
-    padding: 30px 0 0 0;
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: rgba(92, 92, 92, 0.438);
-    
-
-}
-
-.sobre-mim p {
-    max-width: 2000px;
-    padding: 0 40px 40px 40px;
-    font-size: 20px;
-    
-    
-}
-
-
-.sobre-mim .skills {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 20px;
-    padding: 20px 0 20px 0;
-    width: 600px;
-    align-items: center;
-    background-color: rgba(233, 232, 232, 1) ;
-    
-}
-
-
-.sobre-mim .skills img {
-    width: 50px;
-    height: 50px;
-}
-
-.projetos {
-    padding: 50px 20px;
-    text-align: center;
-    background-image: url("../img/68.jpg");
-    background-size: 500px 400px;
-    background-position: center;
-}
-
-.projetos h2 {
-    padding: 30px 0 0 0;
-    font-family: 'Josefin Sans';
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: rgba(92, 92, 92, 0.3);
-}
-.projetos a{
-    text-decoration: none;
-    color: rgb(0, 0, 0); 
-    font-size: 18px;
-}
-.projetos .btn {
-    display: inline-block;
-    background-color: #b9b9b9;
-    padding: 10px 30px;
-    border-radius: 15px;
-    margin-top: 20px;
-    
-}
-
-.projetos p{
-    padding: 0 40px 40px 40px;
-    font-size: 20px;
-}
-.projetos .project-item img{
+/* Imagem de Perfil */
+#home img {
+    border-radius: 50%;
     width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #E9C46A;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.1);
+}
+
+/* Sobre Mim Section */
+#sobre h2{
+    font-size: 120px;
+    color: #0000001a;
+    padding: 50px;
+   
+}
+
+#sobre img {
+    width: 80px;  /* Reduzido */
+    height: 80px; /* Reduzido */
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid #E9C46A;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
-.carousel {
-    display: flex;
-    justify-content: center;
+.habilidades {
+    position: relative; /* Permite ajustar a posição */
+    top: 60px; /* Move o retângulo cinza para baixo */
+    margin: 0 auto; /* Centraliza o retângulo */
+    box-shadow: 0 0 10px #00000080;
+    border-radius: 10px;
+    width: 90%; /* Ajuste o tamanho para ser mais responsivo */
+    height: 100px;
     gap: 20px;
-}
-
-.contato {
-    padding: 50px 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.contato h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: rgba(92, 92, 92, 0.3);
+    display: flex; /* Garante alinhamento interno */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    background-color: #e0e0e0; /* Garante a cor cinza */
 }
 
 
 
-
-
-footer { 
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+.tip{
+    padding: 5px 20px;
+    border-radius: 40px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+    top: -18px;
     
+    transform: translateY(20%);
+    transition: all .3s ease;
+    z-index: 10;
+}
+.habilidades div:hover .tip {
+    opacity: 1; /* Torna visível */
+    visibility: visible; /* Remove o "hidden" */
+    transform: translateY(0); /* Anima para a posição original */
 }
 
-.social-icons {
-    margin-top: 10px;
+#projetos h2{
+    font-size: 120px;
+    color: #0000001a;
+    padding: 50px;
 }
 
-.social-icons a {
-    margin: 0 10px;
+
+/* Contato - Ícones */
+.contato-img {
+    width: 100px;  /* Reduzido */
+    height: 100px; /* Reduzido */
+    
+    border-radius: 50%;
+    border: 3px solid #E9C46A;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.social-icons img {
-    width: 50px;
-    height: 50px;
+.contato-img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
+/* Responsividade */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
     .container img {
-        margin: 0;
-        margin-bottom: 20px;
+        width: 150px;
+        height: 150px;
     }
 
-    .sobre-mim .skills {
-        flex-direction: column;
-        width: 80%;
+    .sobre-mim-img {
+        width: 30px;  /* Reduzido */
+        height: 30px; /* Reduzido */
     }
 
-    .carousel {
-        flex-direction: column;
-        gap: 30px;
-    }
-}
-
-
-@media (max-width: 480px) {
-    header {
-        padding: 5px;
-    }
-
-    header .logo {
-        font-size: 18px;
-    }
-
-    nav ul {
-        gap: 5px;
-    }
-
-    .home h1 {
-        font-size: 30px;
-    }
-
-    .container .btn {
-        padding: 15px 30px;
-        font-size: 16px;
-    }
-
-    .sobre-mim h2 {
-        font-size: 24px;
-    }
-
-    .projetos h2 {
-        font-size: 24px;
-    }
-
-    .social-icons img {
-        width: 40px;
-        height: 40px;
+    .contato-img {
+        width: 25px;  /* Reduzido */
+        height: 25px; /* Reduzido */
     }
 }
