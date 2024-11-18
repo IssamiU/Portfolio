@@ -23,9 +23,11 @@ body {
     transition: transform 0.3s ease;
 }
 
-.container img:hover {
+#home img:hover {
     transform: scale(1.1);
 }
+
+
 
 /* Sobre Mim Section */
 #sobre h2{
@@ -43,6 +45,11 @@ body {
     border: 3px solid #E9C46A;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sobre img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
 
 
@@ -90,37 +97,78 @@ body {
     padding: 50px;
 }
 
+#certificados h2{
+    font-size: 120px;
+    color: #0000001a;
+    padding: 50px;
+}
+
+
+
+
+
 
 /* Contato - Ícones */
-.contato-img {
-    width: 100px;  /* Reduzido */
-    height: 100px; /* Reduzido */
-    
+#contato img {
+    width: 80px;  /* Reduzido */
+    height: 80px; /* Reduzido */
+    padding: 0px;
     border-radius: 50%;
     border: 3px solid #E9C46A;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contato-img:hover {
-    transform: scale(1.2);
+#contato img:hover {
+    transform: scale(1.1);
     filter: brightness(1.2);
 }
 
-/* Responsividade */
+/* Responsividade adicional para seções grandes */
+@media (max-width: 1024px) {
+    #sobre h2, #projetos h2, #certificados h2 {
+        font-size: 3rem; /* Reduzindo o tamanho do título em telas menores */
+    }
+}
+
 @media (max-width: 768px) {
-    .container img {
+    #home img {
         width: 150px;
         height: 150px;
     }
 
-    .sobre-mim-img {
-        width: 30px;  /* Reduzido */
-        height: 30px; /* Reduzido */
+    .habilidades {
+        flex-wrap: wrap; /* Permitir que as habilidades fiquem em várias linhas */
+        height: auto; /* Ajusta a altura */
+        padding: 10px;
     }
 
-    .contato-img {
-        width: 25px;  /* Reduzido */
-        height: 25px; /* Reduzido */
+    .habilidades div {
+        margin: 5px; /* Espaçamento entre as habilidades */
+    }
+
+    #sobre img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #contato img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Ajustes para dispositivos muito pequenos */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem; /* Reduzindo o padding para caber em telas menores */
+    }
+
+    .habilidades {
+        gap: 10px; /* Reduzindo o espaçamento entre habilidades */
+    }
+
+    .swiper {
+        padding: 10px; /* Ajustar o padding para caber em dispositivos pequenos */
     }
 }
