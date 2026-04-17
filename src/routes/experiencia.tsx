@@ -29,13 +29,13 @@ function ExperienciaPage() {
         {experiences.length === 0 ? (
           <FadeInView>
             <div className="glass-strong rounded-2xl p-10 sm:p-14 text-center max-w-2xl mx-auto">
-              <motion.div
+              <motion.img
+                src="/assets/images/gato.png"
+                alt="Gato"
                 animate={{ rotate: [0, 8, -8, 0] }}
                 transition={{ duration: 4, repeat: Infinity }}
-                className="text-5xl mb-5"
-              >
-                🚀
-              </motion.div>
+                className="w-30 h-30 mb-5 mx-auto"
+              />
               <h2 className="font-display text-2xl font-bold gradient-text mb-3">
                 Em busca da primeira oportunidade
               </h2>

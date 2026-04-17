@@ -1,12 +1,5 @@
 import type { Project } from "../components/ProjectCard";
 
-/**
- * Ordena projetos por prioridade fixa:
- * 1. data (mais recente → mais antigo)
- * 2. título (A → Z)
- * 3. cliente (A → Z)
- * 4. tecnologias (lista alfabética concatenada)
- */
 export function sortProjects(list: Project[]): Project[] {
   const collator = new Intl.Collator("pt-BR", { sensitivity: "base" });
   return [...list].sort((a, b) => {

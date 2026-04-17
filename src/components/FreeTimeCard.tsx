@@ -2,16 +2,16 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { freeTimeContent } from "../data/portfolio";
 
-const tabs = ["Stack", "Músicas", "Livros"] as const;
+const tabs = ["Aprendendo", "Explorando", "Construindo"] as const;
 type Tab = (typeof tabs)[number];
 
 export function FreeTimeCard() {
-  const [active, setActive] = useState<Tab>("Stack");
+  const [active, setActive] = useState<Tab>("Aprendendo");
 
   return (
     <div className="glass-strong rounded-2xl p-6 sm:p-8">
       <h3 className="font-display text-lg font-bold text-foreground mb-5">
-        Durante Meu Tempo Livre
+        No que estou focado atualmente
       </h3>
 
       <div className="flex gap-2 mb-6 border-b border-border/50">
@@ -45,13 +45,13 @@ export function FreeTimeCard() {
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.25 }}
         >
-          {active === "Stack" && (
+          {active === "Aprendendo" && (
             <div>
               <p className="text-xs font-mono text-primary uppercase tracking-widest mb-4">
-                {freeTimeContent.stack.titulo}
+                {freeTimeContent.evoluindo.titulo}
               </p>
               <ul className="space-y-3">
-                {freeTimeContent.stack.items.map((item, i) => (
+                {freeTimeContent.evoluindo.items.map((item, i) => (
                   <motion.li
                     key={item}
                     initial={{ opacity: 0, x: -8 }}
@@ -66,37 +66,47 @@ export function FreeTimeCard() {
               </ul>
             </div>
           )}
-          {active === "Músicas" && (
-            <ul className="space-y-3">
-              {freeTimeContent.musicas.map((m, i) => (
-                <motion.li
-                  key={m}
-                  initial={{ opacity: 0, x: -8 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.05 }}
-                  className="flex items-start gap-3 text-foreground"
-                >
-                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                  <span className="text-sm sm:text-base">{m}</span>
-                </motion.li>
-              ))}
-            </ul>
+          {active === "Explorando" && (
+            <div>
+              <p className="text-xs font-mono text-primary uppercase tracking-widest mb-4">
+                {freeTimeContent.explorando.titulo}
+              </p>
+                <ul className="space-y-3">
+                  {freeTimeContent.explorando.items.map((m, i) => (
+                    <motion.li
+                      key={m}
+                      initial={{ opacity: 0, x: -8 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: i * 0.05 }}
+                      className="flex items-start gap-3 text-foreground"
+                    >
+                      <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                      <span className="text-sm sm:text-base">{m}</span>
+                    </motion.li>
+                  ))}
+                </ul>
+            </div>
           )}
-          {active === "Livros" && (
-            <ul className="space-y-3">
-              {freeTimeContent.livros.map((l, i) => (
-                <motion.li
-                  key={l}
-                  initial={{ opacity: 0, x: -8 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.05 }}
-                  className="flex items-start gap-3 text-foreground"
-                >
-                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                  <span className="text-sm sm:text-base">{l}</span>
-                </motion.li>
-              ))}
-            </ul>
+          {active === "Construindo" && (
+            <div>
+              <p className="text-xs font-mono text-primary uppercase tracking-widest mb-4">
+                {freeTimeContent.construindo.titulo}
+              </p>
+                <ul className="space-y-3">
+                  {freeTimeContent.construindo.items.map((l, i) => (
+                    <motion.li
+                      key={l}
+                      initial={{ opacity: 0, x: -8 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: i * 0.05 }}
+                      className="flex items-start gap-3 text-foreground"
+                    >
+                      <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                      <span className="text-sm sm:text-base">{l}</span>
+                    </motion.li>
+                  ))}
+                </ul>
+            </div>
           )}
         </motion.div>
       </AnimatePresence>

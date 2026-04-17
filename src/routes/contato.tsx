@@ -30,7 +30,7 @@ const contactLinks = [
   {
     label: "GitHub",
     href: personalInfo.github,
-    handle: "@issamiUmeworx",
+    handle: "@IssamiU",
     description: "Veja meus repositórios",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">

@@ -126,7 +126,7 @@ function Index() {
         <section className="mx-auto max-w-5xl px-4 sm:px-6 py-16">
           <div className="text-center mb-10">
             <p className="text-sm font-mono text-primary uppercase tracking-widest mb-3">Destaques</p>
-            <h2 className="text-3xl sm:text-4xl font-display font-bold gradient-text">Projetos Recentes</h2>
+            <h2 className="text-3xl sm:text-4xl font-display font-bold gradient-text">Projetos em Destaque</h2>
           </div>
           <ProjectCarousel projects={projects} />
         </section>

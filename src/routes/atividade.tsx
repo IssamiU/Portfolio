@@ -63,7 +63,7 @@ function AtividadePage() {
             Atividade
           </h1>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Repositórios, stack e o que tenho construído nos meus tempos livres.
+            Repositórios, stack e o que tenho construído no meu tempo livre.
           </p>
         </div>
 

@@ -40,7 +40,7 @@ export async function fetchGitlabRepos(username: string): Promise<Repo[]> {
     if (!res.ok) throw new Error(`GitLab ${res.status}`);
     const data = await res.json();
     return (data as any[]).map((r) => ({
-      name: r.name,
+      name: r.path,
       description: r.description ?? "",
       language: "—",
       updatedAt: r.last_activity_at,
