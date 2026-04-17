@@ -100,16 +100,6 @@ export function ProjectCarousel({ projects }: { projects: Project[] }) {
                       </span>
                     ))}
                   </div>
-                  <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-primary">
-                    Ver projeto completo
-                    <motion.svg
-                      width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                      animate={{ x: [0, 4, 0] }}
-                      transition={{ duration: 1.5, repeat: Infinity }}
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </motion.svg>
-                  </div>
                 </div>
               </div>
             </Link>

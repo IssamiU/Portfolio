@@ -18,9 +18,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <PageTransition>
-      {/* Hero */}
       <section className="relative flex flex-col items-center justify-center px-4 py-24 sm:py-32 lg:py-40 text-center overflow-hidden">
-        {/* Spinning orbit rings */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <motion.div
             className="absolute w-[500px] h-[500px] sm:w-[600px] sm:h-[600px] rounded-full border border-primary/10"
@@ -32,7 +30,6 @@ function Index() {
             animate={{ rotate: -360 }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           />
-          {/* Orbiting dot */}
           <motion.div
             className="absolute w-3 h-3 rounded-full bg-primary/60 blur-[2px]"
             animate={{
@@ -43,7 +40,6 @@ function Index() {
           />
         </div>
 
-        {/* Avatar glow */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -108,7 +104,8 @@ function Index() {
           </Link>
           <a
             href={personalInfo.resumeUrl}
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-xl border border-primary/30 px-6 py-3 text-sm font-medium text-primary transition-all hover:bg-primary/10 hover:scale-105"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -121,7 +118,6 @@ function Index() {
         </motion.div>
       </section>
 
-      {/* Project Carousel */}
       <FadeInView>
         <section className="mx-auto max-w-5xl px-4 sm:px-6 py-16">
           <div className="text-center mb-10">
@@ -132,7 +128,6 @@ function Index() {
         </section>
       </FadeInView>
 
-      {/* Skills preview */}
       <FadeInView>
         <section className="mx-auto max-w-4xl px-4 sm:px-6 py-16">
           <h2 className="text-center text-sm font-mono text-muted-foreground uppercase tracking-widest mb-8">

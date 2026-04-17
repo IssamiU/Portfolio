@@ -31,7 +31,7 @@ function ProjetosPage() {
           <p className="text-sm font-mono text-primary uppercase tracking-widest mb-3">Meu trabalho</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold gradient-text">Projetos</h1>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-            Organizados automaticamente por data, nome, cliente e tecnologias.
+            Projetos que refletem minha evolução técnica e experiência em desenvolvimento.
           </p>
         </div>
 

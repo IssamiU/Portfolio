@@ -19,7 +19,6 @@ function CertificadosPage() {
   return (
     <PageTransition>
       <div className="mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-24">
-        {/* Header */}
         <div className="text-center mb-16">
           <p className="text-sm font-mono text-primary uppercase tracking-widest mb-3">
             Conquistas
@@ -32,7 +31,6 @@ function CertificadosPage() {
           </p>
         </div>
 
-        {/* Lista */}
         <div className="space-y-6">
           {certificates.map((cert, i) => (
             <FadeInView key={cert.id} delay={i * 0.1}>
@@ -76,7 +74,6 @@ function CertificadosPage() {
           ))}
         </div>
 
-        {/* Empty state */}
         {certificates.length === 0 && (
           <div className="text-center py-20">
             <p className="text-muted-foreground">
