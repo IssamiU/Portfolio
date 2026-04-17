@@ -164,13 +164,13 @@ function SobrePage() {
                     rotate: [0, 1, -1, 0],
                     scale: [1, 1.015, 1],
                     filter: [
-                      "drop-shadow(0 0 0px rgba(0,212,255,0.08))",
-                      "drop-shadow(0 0 10px rgba(0,212,255,0.18))",
-                      "drop-shadow(0 0 0px rgba(0,212,255,0.08))",
+                      "drop-shadow(0 0 2px rgba(0,212,255,0.25))",
+                      "drop-shadow(0 0 25px rgba(0,212,255,0.7))",
+                      "drop-shadow(0 0 2px rgba(0,212,255,0.25))",
                     ],
                   }}
                   transition={{
-                    duration: 5.5,
+                    duration: 4.1,
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
