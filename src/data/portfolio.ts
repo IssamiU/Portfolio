@@ -249,7 +249,7 @@ export const projects: Project[] = [
       "Aplicação mobile completa voltada para planejamento de refeições e organização de compras, integrando frontend mobile, backend em API REST e persistência em bancos diferentes conforme o tipo de dado. O sistema combina gerenciamento de receitas, planejamento semanal e geração automatizada de lista de compras com foco em usabilidade e escalabilidade.",
     impact:
       "Desenvolvi o projeto utilizando React Native com Expo no frontend e Node.js com Express no backend, estruturando uma arquitetura full stack com separação clara de responsabilidades. Implementei autenticação com JWT e refresh token, cadastro de usuários com preferências alimentares, dashboard semanal, cadastro e visualização de receitas, sistema de favoritos, planejamento semanal de refeições, geração automática da lista de compras e edição manual dos itens. Também organizei o ambiente com Docker e segui uma base preparada para evolução futura com persistência offline e armazenamento externo de imagens.",
-    repoUrl: "https://github.com/SEU-USUARIO/SEU-REPO-MEALSYNC",
+    repoUrl: "https://github.com/IssamiU/MealSync",
     banner: "/assets/images/MealSync-thumbnail.png",
     thumbnail: "/assets/images/MealSync-thumbnail.png",
     // video: "/assets/videos/mealsync-demo.mp4",
@@ -328,6 +328,7 @@ export type Experience = {
   company?: string;
   duration?: string;
   location?: string;
+  current?: boolean;
   type?: "Estágio" | "Freelance" | "Acadêmico" | "CLT" | "PJ";
 };
 
@@ -338,6 +339,7 @@ export const experiences: Experience[] = [
     role: "Estagiário em P&D",
     company: "SIMOVA Tecnologia e Serviços de Informática S.A",
     type: "Estágio",
+    current: true,
     location: "São José dos Campos, SP — Brasil",
     duration: "Mai 2026 - Jul 2027",
     technologies: [
