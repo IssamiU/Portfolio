@@ -67,6 +67,7 @@ export const projects: Project[] = [
       "MongoDB",
       "C",
       "C++",
+      "ESP32",
       "Swagger",
       "Docker",
       "AWS",
@@ -266,7 +267,6 @@ export const featuredRepos: { name: string; provider: "github" | "gitlab" }[] = 
   { name: "GSW-2025.2-3Sem", provider: "github" },
   { name: "api-4-sem-tecsus", provider: "gitlab" },
   { name: "ChatBot-Musica", provider: "github" },
-  { name: "ChatBot-Musica", provider: "github" },
   { name: "MealSync", provider: "github" },
 ];
 
@@ -331,7 +331,33 @@ export type Experience = {
   type?: "Estágio" | "Freelance" | "Acadêmico" | "CLT" | "PJ";
 };
 
-export const experiences: Experience[] = [];
+export const experiences: Experience[] = [
+  {
+    id: "estagio-simova-pd",
+    project: "Pesquisa e Desenvolvimento em Telemetria Industrial",
+    role: "Estagiário em P&D",
+    company: "SIMOVA Tecnologia e Serviços de Informática S.A",
+    type: "Estágio",
+    location: "São José dos Campos, SP — Brasil",
+    duration: "Mai 2026 - Jul 2027",
+    technologies: [
+      "Python",
+      "C++",
+      "ESP32",
+      "Firmware",
+      "QA",
+      "Testes Automatizados",
+      "BLE",
+      "UART",
+      "Protocolos Seriais",
+      "Sistemas Embarcados",
+      "Telemetria Industrial",
+    ],
+    impact:
+      "Atuo no time de Pesquisa e Desenvolvimento apoiando o desenvolvimento e validação de sistemas embarcados e ferramentas de software para telemetria industrial. Minhas atividades envolvem desenvolvimento e manutenção de scripts de QA e testes automatizados para validação de equipamentos, organização de ferramentas internas em Python e C++, suporte ao desenvolvimento de firmware para dispositivos embarcados com ESP32, documentação técnica de procedimentos de teste e validação, além de apoio na integração entre hardware e plataformas de backend por meio de protocolos seriais, BLE e UART.",
+  },
+  
+];
 
 export const certificates = [
   {
